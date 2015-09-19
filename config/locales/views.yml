@@ -1,0 +1,35 @@
+pt-BR:
+  titles:
+    student_title: Alunos
+    course_title: Cursos
+  new:
+    new_student: Novo Aluno
+    new_course: Novo Curso
+  edit:
+    edit_student: Editar Aluno
+    edit_course: Editar Curso
+  show:
+    student: Visualizar Aluno
+    course: Visualizar Curso
+  buttons:
+    back: Voltar
+    assign: Vincular
+    new_student: Novo Aluno
+    new_course: Novo Curso
+    assign_course: Escolher um Curso
+  spams:
+    registred: Matriculado
+  nav:
+    all_students: Todos os Alunos
+    all_courses: Todos os Cursos
+    classrooms: Turmas
+    home: Home
+    challange: Desafio IS
+  alert:
+    confirm: Deseja excluir?
+  student:
+    name: Nome
+    register_number: Matrícula
+  course:
+    name: Nome
+    description: Descrição

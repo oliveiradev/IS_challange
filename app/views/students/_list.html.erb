@@ -1,0 +1,17 @@
+<table class="table table-striped">
+  <tr>
+    <th><%= t('student.name')%></th>
+    <th><%= t('student.register_number')%></th>
+    <th></th>
+  </tr>
+  <%@students.each do |student|%>
+    <tr>
+      <td><%=link_to student.name, student_path(student)%></td>
+      <td><%=student.register_number%></td>
+      <td>
+        <%=link_to "", edit_student_path(student), class: "glyphicon glyphicon-edit"%>
+        <%=link_to "", student_path(student), method: :delete, class: "glyphicon glyphicon-trash", data: { confirm: t('alert.confirm') }%>
+      </td>
+    </tr>
+  <%end%>
+</table>

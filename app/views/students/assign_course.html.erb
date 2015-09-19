@@ -1,0 +1,19 @@
+<h1><%= t('titles.course_title')%></h1>
+<table class="table table-striped">
+  <tr>
+    <th><%= t('course.name') %></th>
+    <th><%= t('course.description') %></th>
+    <th></th>
+  </tr>
+  <%@courses.each do |course|%>
+    <tr>
+      <td><%=course.name%></td>
+      <td><%=course.description%></td>
+      <% if course.students.include?(@student) %>
+          <td><span class="label label-warning"><%= t('spams.registred')%></span></td>
+      <%else%>
+          <td><%=link_to t('buttons.assign'), confirm_assign_student_path(@student , course) , class: 'btn btn-success'%></td>
+      <%end%>
+    </tr>
+  <%end%>
+</table>

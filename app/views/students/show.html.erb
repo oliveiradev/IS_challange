@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h1><%= t('show.student')%></h1>
+            <table class="table table-striped">
+                <tr>
+                    <th><%= t('student.name')%></th>
+                    <td>
+                        <%=@student.name%>
+                    </td>
+                </tr>
+                <tr>
+                    <th><%= t('student.register_number')%></th>
+                    <td>
+                        <%=@student.register_number%>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <%=link_to t('buttons.assign_course'), assign_course_student_path(@student.id), class: "btn btn-primary"%>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
