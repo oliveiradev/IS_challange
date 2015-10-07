@@ -16,6 +16,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'simple_form'
 gem 'haml', '~> 4.0.4'
 
+
+
 gem 'enumerate_it', '~> 1.2.0'
 gem 'pg', '~> 0.17.1'
 
@@ -41,8 +43,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.1'
   gem 'shoulda-matchers', '~> 2.6.1' , require: false
 
-  #gem 'rails-assets-angular-mocks', '1.2.14'
-  #gem 'rails-assets-angular-scenario', '1.2.14'
+  gem 'mysql2'
   gem 'database_cleaner'
   gem 'awesome_print'
   gem 'pry-rails'
